@@ -1,4 +1,4 @@
-FROM sonatype/nexus3:3.22.1
+FROM sonatype/nexus3:3.17.0
 
 USER root
 
