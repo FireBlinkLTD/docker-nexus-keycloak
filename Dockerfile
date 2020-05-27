@@ -8,7 +8,7 @@ ENV NEXUS_PLUGINS ${NEXUS_HOME}/system
 WORKDIR "${NEXUS_HOME}"
 
 # https://github.com/flytreeleft/nexus3-keycloak-plugin
-ENV KEYCLOAK_PLUGIN_TAG 0.4.0-prev2-SNAPSHOT
+ENV KEYCLOAK_PLUGIN_TAG 0.4.0-prev1-SNAPSHOT
 ENV KEYCLOAK_PLUGIN_VERSION 0.4.0-SNAPSHOT-sources
 ENV KEYCLOAK_PLUGIN org.github.flytreeleft/nexus3-keycloak-plugin/${KEYCLOAK_PLUGIN_VERSION}
 
