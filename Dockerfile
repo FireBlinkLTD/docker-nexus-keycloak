@@ -20,6 +20,9 @@ RUN chown nexus ${NEXUS_PLUGINS}/${KEYCLOAK_PLUGIN}.jar
 RUN echo "reference\\:file\\:${KEYCLOAK_PLUGIN}.jar = 200" >> ${NEXUS_HOME}/etc/karaf/startup.properties
 
 RUN cat ${NEXUS_HOME}/etc/karaf/startup.properties
+RUN cat ${NEXUS_HOME}/etc/karaf/startup.properties
+
+RUN echo "nexus.scripts.allowCreation=true" >> ${NEXUS_HOME}/etc/nexus-default.properties
 
 EXPOSE 5000 8081 8443
 USER nexus
